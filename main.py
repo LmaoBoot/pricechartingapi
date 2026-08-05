@@ -25,7 +25,7 @@ def get_product(url: str) -> dict:
         name_text = product_name.text.strip().split(" \n")[0]
         data["product_name"] = name_text
 
-    product_details = soup.find("div", id="product_details")
+    product_details = soup.find("div", id="js-dialog-large-image")
     if product_details:
         img = product_details.find("img")
         if img:
