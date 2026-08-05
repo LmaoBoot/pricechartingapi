@@ -1,4 +1,5 @@
 Flask
 requests
-BeautifulSoup
+beautifulsoup4
 gunicorn
+wheel
